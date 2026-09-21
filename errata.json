@@ -1,0 +1,14 @@
+{
+  "description": "Machine-readable companion to ERRATA.md. data_full.json is deliberately unchanged; apply these corrections only if your use case wants them, and say so when reporting numbers. Indexes are 0-based into data_full.json.",
+  "corrections": [
+    {"split": "val",   "index": 498,  "text": "allow me to turn on the lights",                             "from": "restaurant_reservation",      "to": "smart_home"},
+    {"split": "val",   "index": 1011, "text": "what is on my to do list",                                   "from": "reminder",                    "to": "todo_list", "note": "duplicate of train[7424], which carries todo_list"},
+    {"split": "test",  "index": 3881, "text": "what is my current location",                                "from": "share_location",              "to": "current_location"},
+    {"split": "test",  "index": 392,  "text": "can you call the help desk line for my credit card company", "from": "replacement_card_duration",   "to": "make_call"},
+    {"split": "test",  "index": 393,  "text": "how can i request a new credit card",                        "from": "replacement_card_duration",   "to": "new_card"}
+  ],
+  "inconsistent_boundaries": [
+    {"intents": ["ingredients_list", "recipe"],  "examples": ["train[10242]", "test[3065]", "test[3068]"]},
+    {"intents": ["pto_used", "pto_balance"],     "examples": ["train[6193]", "test[1844]"]}
+  ]
+}

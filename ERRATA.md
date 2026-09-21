@@ -46,6 +46,13 @@ to-do list look like", "list my to-do list").
   `pto_used`, while `pto_balance` contains "how many pto days do i have left"
   ("left" describes a balance).
 
+## Machine-readable form
+
+The five unambiguous corrections are also in [`errata.json`](errata.json) as
+`{split, index, from, to}` records, validated against `data_full.json`, so they
+can be applied programmatically by anyone who wants corrected labels — as an
+explicit, opt-in step, to be disclosed when reporting numbers.
+
 ## Scale
 
 These plus a handful of genuinely ambiguous boundary rows amount to roughly
